@@ -1,0 +1,283 @@
+@charset "UTF-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* Abaixo está o CSS do cabeçalho do site.*/
+header {
+    height: 100px;
+    margin-bottom: 135px;
+}
+
+h1 {
+    margin: 0;
+    display: inline;
+    position: absolute;
+    left: 43.5%;
+    top: 100px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.logonome img {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 40px;
+    left: 39.5%;
+}
+
+.logonome {
+    position: relative;
+    top: 110px;
+    left: 4%;
+}
+
+
+
+.barradenavegacao {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 0;
+    position: relative;
+    top: 110px;
+    background-color: #001A53;
+    height: 75px;
+}
+
+.barradenavegacao li {
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    bottom: 27px;
+
+}
+
+.menu {
+    background-color: #fff;
+    position: relative;
+    bottom: 130px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Abaixo está o CSS que define toda a estrutura e estilo dos botões que ficam no cabeçalho do site.*/
+.barradenavegacao button {
+    font-size: 12px;
+    color: #e1e1e1;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+
+}
+
+.barradenavegacao button:hover,
+.barradenavegacao button:focus {
+    color: #fff;
+}
+
+.barradenavegacao button:focus:after,
+.barradenavegacao button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.barradenavegacao button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* Mudanças nas classes e IDs do modal personalizado */
+.custom-modal {
+    /* O Modal é sobre a parte dos filtros na lateral */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-modal-content label,
+.custom-modal-content select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#openCustomModalButton {
+    /* botão que abre o filtro */
+    position: absolute;
+    top: 200px;
+    left: 45%;
+    cursor: pointer;
+    background-color: #578E39;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 10%;
+}
+
+#closeCustomModalButton {
+    /* botão que fecha o filtro */
+    background-color: #578E39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.custom-modal.left {
+    left: -250px;
+}
+
+.custom-modal.left.active {
+    left: 0;
+}
+
+.cards-container {
+    /* Fotos e informações dos animais dentro de cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 247px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.veja-mais-button {
+    display: none;
+    background-color: #578E39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.card:hover .veja-mais-button {
+    display: block;
+}
+
+/* Abaixo está o CSS do rodapé da página.*/
+footer {
+    background-color: #001A53;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    height: 135px;
+}
+
+/* Abaixo está o CSS da primeira coluna da grid do rodapé.*/
+footer .coluna1,
+.coluna1 li {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* Abaixo está o CSS da segunda coluna da grid do rodapé.*/
+.coluna2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.coluna2 {
+    position: relative;
+    margin-top: 33px;
+    left: 40%;
+    list-style: none;
+}
+
+/* Abaixo o CSS para definir o tamanho e posicionamento da logo do site no rodapé da página.*/
+footer img {
+    position: relative;
+    bottom: 10px;
+    width: 150px;
+    margin-left: 40px;
+    height: 150px;
+}
+
+/* Abaixo o css para definir o estilo dos ícones das redes sociais do site.*/
+.instagram-icon,
+.facebook-icon,
+.email-icon {
+    color: white;
+    font-size: 30px;
+}
+
+.final-pagina {
+    color: white;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+}

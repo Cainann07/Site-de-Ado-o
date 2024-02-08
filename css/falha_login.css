@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body, html{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 610px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+h1{
+    position: absolute;
+    left: 29%;
+    color: white;
+    font-size: 20px;
+    top: 20%;
+}
+img{
+    position: absolute;
+    left: 41.5%;
+    top:30%
+}

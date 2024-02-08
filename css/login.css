@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 305px;
+    overflow-y: hidden;
+
+}
+
+form {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+}
+
+h1 {
+    position: absolute;
+    left: 46.3%;
+    top: 19%;
+    color: #021F59;
+}
+
+.botao{
+	color: white;
+	position: relative;
+	left: 0px;
+}
+
+header img {
+    position: absolute;
+    left: 45%;
+    top: 1px;
+    width: 135px;
+    height: 130px;
+}
+
+a {
+    color: #021F59;
+    position: relative;
+    right: 20px;
+}
+
+.btn-primary {
+    background-color: #021F59;
+    color: #ffffff;
+}
+
+.form-group label {
+    color: black;
+}
+
+
+
+footer {
+    background-color: black;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.coluna2 a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .coluna1,
+.coluna1 li {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: inline;
+    margin-left: 10px;
+}
+
+.coluna2 {
+    position: relative;
+    margin-top: 70px;
+    left: 40%;
+    list-style: none;
+}
+
+footer img {
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.instagram-icon,
+.facebook-icon,
+.email-icon {
+    color: white;
+    font-size: 30px;
+}
+
+.final-pagina {
+    color: white;
+    background-color: #001A53;
+    margin: 0;
+    text-align: center;
+}

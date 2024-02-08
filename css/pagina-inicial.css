@@ -1,0 +1,353 @@
+@charset "UTF-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* Abaixo está o CSS do cabeçalho do site.*/
+header {
+    height: 100px;
+    margin-bottom: 68px;
+}
+
+h1 {
+    margin: 0;
+    display: inline;
+    position: absolute;
+    left: 42.5%; 
+    top: 100px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.logonome img {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 20px;
+    left: 40%;
+}
+
+.logonome {
+    position: relative;
+    top: 110px;
+    left: 4%;
+}
+
+
+
+.barradenavegacao {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 0;
+    position: relative;
+    top: 110px;
+    background-color: #001A53;
+}
+
+.barradenavegacao li {
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    bottom: 27px;
+
+}
+
+.menu {
+    background-color: #fff;
+    position: relative;
+    bottom: 130px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Abaixo está o CSS que define toda a estrutura e estilo dos botões que ficam no cabeçalho do site.*/
+.barradenavegacao button {
+    font-size: 12px;
+    color: #e1e1e1;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+
+}
+
+.barradenavegacao button:hover,
+.barradenavegacao button:focus {
+    color: #fff;
+}
+
+.barradenavegacao button:focus:after,
+.barradenavegacao button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.barradenavegacao button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/*Abaixo está o CSS que define toda a estrutura e estilo do Carrosel.*/
+.carousel-item {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.carousel-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.carousel-item button,
+p {
+    z-index: 3;
+}
+
+.carousel-item img {
+    opacity: 0.8;
+    height: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-carousel-height {
+    max-height: 600px;
+    /* Defina a altura máxima desejada */
+}
+
+/* Abaixo está o CSS dos parágrafos que ficam nas fotos do carrossel.*/
+
+.mensagem1 {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    left: 42%;
+    margin: 0;
+}
+
+.mensagem2 {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    left: 23%;
+    margin: 0;
+}
+
+.mensagem3 {
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    left: 28%;
+    margin: 0;
+}
+
+/* Abaixo está o CSS do botão que fica dentro do Carrossel.*/
+.botao-saibamais {
+    position: absolute;
+    top: 58%;
+    left: 45.5%;
+
+}
+
+.botao-saibamais {
+    --color: #598C3D;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 0;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.botao-saibamais:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.botao-saibamais:hover {
+    color: #fff;
+}
+
+.botao-saibamais:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.botao-saibamais:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.botao-saibamais:active:before {
+    background: #598C3D;
+    transition: background 0s;
+}
+
+
+/* Abaixo está o CSS da segunda 'section' do site*/
+.s2 {
+    color: white;
+    background-color: #578E39;
+    padding-top: 50px;
+}
+
+.s2 div {
+    position: relative;
+    left: 8%;
+}
+
+.s2 div h2 {
+    margin-left: 115px;
+}
+
+.s2 div p {
+    text-align: center;
+    line-height: 30px;
+    width: 40%;
+}
+
+.s2 img {
+    position: relative;
+    left: 55%;
+    bottom: 380px;
+}
+
+.s2 {
+    height: 410px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.elementor-shape-fill {
+    color: white;
+}
+
+/* Abaixo está o CSS da 'section' que exibe informações sobre a equipe.*/
+
+.s3 {
+    margin-top: 50px;
+    margin-left: 100px;
+    line-height: 30px;
+}
+
+.foto-equipe {
+    display: flex;
+    width: 10%;
+    margin-left: 80px;
+}
+
+.foto-equipe img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.membro {
+    margin-left: 50px;
+
+}
+
+/* Abaixo está o CSS do rodapé da página.*/
+footer {
+    background-color: #001A53;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    height: 135px;
+}
+
+/* Abaixo está o CSS da primeira coluna da grid do rodapé.*/
+footer .coluna1,
+.coluna1 li {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: inline;
+    margin-left: 10px;
+}
+
+/* Abaixo está o CSS da segunda coluna da grid do rodapé.*/
+.coluna2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.coluna2 {
+    position: relative;
+    margin-top: 33px;
+    left: 40%;
+    list-style: none;
+}
+
+/* Abaixo o CSS para definir o tamanho e posicionamento da logo do site no rodapé da página.*/
+footer img {
+    position: relative;
+    bottom: 10px;
+    width: 150px;
+    margin-left: 40px;
+    height: 150px;
+}
+
+/* Abaixo o css para definir o estilo dos ícones das redes sociais do site.*/
+.instagram-icon,
+.facebook-icon,
+.email-icon {
+    color: white;
+    font-size: 30px;
+}
+
+.final-pagina {
+    color: white;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+}
